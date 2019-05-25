@@ -20,3 +20,5 @@ target_compile_options( ${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories( ${CMAKE_PROJECT_NAME} PRIVATE ${SDL2_INCLUDE_DIRS} )
 target_link_libraries( ${CMAKE_PROJECT_NAME} PRIVATE ${SDL2_LIBRARIES} )
 
+cmake_policy( SET CMP0004 OLD )
+
