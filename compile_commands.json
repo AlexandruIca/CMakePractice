@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/media/MHDD/devel/cmake_generator/build",
+  "command": "/usr/bin/clang++   -I/usr/include/SDL2  -g   -Wall -Werror -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/CMakeGen.dir/src/main.cpp.o -c /media/MHDD/devel/cmake_generator/src/main.cpp",
+  "file": "/media/MHDD/devel/cmake_generator/src/main.cpp"
+}
+]
