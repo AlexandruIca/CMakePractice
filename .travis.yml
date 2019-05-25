@@ -48,7 +48,8 @@ script:
     - mkdir build
     - cd build
     - eval "${EVAL_CXX}"
-    - cmake -DSDL2_DIR=/usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake ..
+    - dpkg -L libsdl2-dev
+    - cmake ..
     - make -j$(nproc)
     - ./CMakeGen
 
