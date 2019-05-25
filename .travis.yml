@@ -48,7 +48,8 @@ script:
     - mkdir build
     - cd build
     - eval "${EVAL_CXX}"
-    - cmake ..
+    - ls /usr/include | grep -i "sdl"
+    - cmake -DCMAKE_PREFIX_PATH=~/usr/include ..
     - make -j$(nproc)
     - ./CMakeGen
 
