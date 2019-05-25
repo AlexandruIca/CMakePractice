@@ -1,5 +1,7 @@
 cmake_minimum_required( VERSION 3.8 )
 
+cmake_policy( SET CMP0004 OLD )
+
 project( CMakeGen LANGUAGES CXX )
 
 find_package( SDL2 REQUIRED )
