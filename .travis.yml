@@ -3,7 +3,6 @@ language: c++
 matrix:
     include:
         - os: linux
-          dist: xenial
           env:
               - TARGET=x86_64-unkown-linux-gnu
               - EVAL_CXX="CC=gcc-8 && CXX=g++-8"
@@ -18,7 +17,6 @@ matrix:
                       - libsdl2-dev
           compiler: g++-8
         - os: linux
-          dist: xenial
           env:
               - TARGET=x86_64-unkown-linux-gnu
               - EVAL_CXX="CC=clang-7 && CXX=clang++-7"
