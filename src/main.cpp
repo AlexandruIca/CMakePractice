@@ -9,5 +9,7 @@ int main()
     std::cout << "Worked" << std::endl;
 
     SDL_Quit();
+
+    return 0;
 }
 
