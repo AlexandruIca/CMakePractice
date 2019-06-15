@@ -37,7 +37,8 @@ build:
     verbosity: minimal
 
 after_build:
-    - ./%configuration%/CMakeGen.exe
+    - cd %configuration%
+    - CMakeGen.exe
 
 cache:
     - SDL2-devel-2.0.9-VC.zip
