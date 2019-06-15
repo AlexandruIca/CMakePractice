@@ -1,7 +1,7 @@
 cmake_minimum_required( VERSION 3.8 )
 
 if( POLICY CMP0004 )
-    set( POLICY CMP0004 OLD )
+    cmake_policy( SET CMP0004 OLD )
 endif()
 
 project( CMakeGen LANGUAGES CXX )
