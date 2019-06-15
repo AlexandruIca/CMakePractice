@@ -2,7 +2,7 @@
 
 #include "SDL.h"
 
-int main()
+int main(int, char*[])
 {
     SDL_Init(SDL_INIT_VIDEO);
 
