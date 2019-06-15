@@ -26,6 +26,7 @@ init:
     - cmd: msbuild /version
 
 before_build:
+    - cd %APPVEYOR_BUILD_FOLDER%
     - mkdir build
     - cd build
     - cmake -DCMAKE_BUILD_TYPE=%configuration% -DSDL2_DIR=%BASEDIR%\SDL2-devel-2.0.9 ..
