@@ -36,8 +36,7 @@ build:
     parallel: true
     verbosity: minimal
 
-test_script:
-    - cd build
+after_build:
     - dir
 
 cache:
