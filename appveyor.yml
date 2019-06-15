@@ -37,7 +37,8 @@ build:
     verbosity: minimal
 
 after_build:
-    - dir
+    - dir %configuration%
+    - dir %PLATFORM%
 
 cache:
     - SDL2-devel-2.0.9-VC.zip
