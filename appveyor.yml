@@ -36,10 +36,6 @@ build:
     parallel: true
     verbosity: minimal
 
-after_build:
-    - cd %configuration%
-    - CMakeGen.exe
-
 cache:
     - SDL2-devel-2.0.9-VC.zip
 
