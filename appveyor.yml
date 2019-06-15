@@ -32,7 +32,7 @@ before_build:
     - cmake -DCMAKE_BUILD_TYPE=%configuration% -DSDL2_DIR=%BASEDIR%\SDL2-2.0.9 ..
 
 build:
-    project: %APPVEYOR_BUILD_FOLDER%\build\CMakeGen.sln
+    project: build\CMakeGen.sln
     parallel: true
     verbosity: minimal
 
