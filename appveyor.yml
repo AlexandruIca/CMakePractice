@@ -36,6 +36,10 @@ build:
     parallel: true
     verbosity: minimal
 
+test_script:
+    - cd build
+    - dir
+
 cache:
     - SDL2-devel-2.0.9-VC.zip
 
