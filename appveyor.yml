@@ -1,8 +1,18 @@
 image: Visual Studio 2019
 
 platform:
-    - Win32
+    - x86
     - x64
+
+environment:
+    BASEDIR: c:\mylibs
+
+install:
+    - mkdir %BASEDIR%
+    - IF NOT EXIST SDL2-devel-2.0.9-VC.zip curl -fsS -O https://libsdl.org/release/SDL2-devel-2.0.9-VC.zip
+    - copy SDL2-devel-2.0.9-VC.zip %BASEDIR% > nul
+    - cd %BASEDIR%
+    - 7z x SDL2-devel-2.0.9-VC.zip > nul
 
 configuration:
     - Debug
@@ -18,10 +28,13 @@ init:
 before_build:
     - mkdir build
     - cd build
-    - cmake -DCMAKE_BUILD_TYPE=%configuration% ..
+    - cmake -DCMAKE_BUILD_TYPE=%configuration% -DSDL2_DIR=%BASEDIR%\SDL2-devel-2.0.9 ..
 
 build:
     project: build/CMakeGen.sln
     parallel: true
     verbosity: minimal
+
+cache:
+    - SDL2-devel-2.0.9-VC.zip
 

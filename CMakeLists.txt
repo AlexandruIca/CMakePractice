@@ -6,6 +6,8 @@ endif()
 
 project( CMakeGen LANGUAGES CXX )
 
+set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/" )
+
 find_package( SDL2 REQUIRED )
 
 set( SRC_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp )
